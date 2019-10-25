@@ -21,14 +21,15 @@
       <nav class="navbar navbar-expand-md navbar-dark bg-dark">
             <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
+                    <!--use nav-active if want it to be colored white-->
+                    <!-- <li class="nav-item">  
                         <a class="nav-link" href="#">Blog</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Resume</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="//codeply.com">Resume</a>
-                    </li>
-                    <li class="nav-item">
-                            <a class="nav-link" href="//codeply.com">Projects</a>
+                            <a class="nav-link" href="#projects">Projects</a>
                     </li>
                     
                 </ul>
@@ -42,10 +43,10 @@
             <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About Me</a>
+                        <a class="nav-link" href="#about">About Me</a>
                     </li>
                 </ul>
             </div>
@@ -53,15 +54,16 @@
     </div>
 
 <!-- Intro section -->
-    <div class="intro">
+    <div class="intro" id="about-me">
         <div class="intro-text">
             <h1 class="intro-name">Li Jie</h1>
-            <h2 class="intro-role">a full stack developer.</h2>
+            <h2 class="intro-role">&nbsp &nbsp  a full stack developer.</h2>
         </div>
     </div>
 
     <div class="about">
         <h2 class="about-title">Hello World!</h2>
+        <hr>
         <p class="about-info"> In 2019, a college student stucked at a crossroad decided to take the leap into web development to
             kickstart his CS career. Being a CS major, I've never really understood what kind of career I would like to build till I incidentially stumbled upon
             a beautifully hand-crafted website by an acquantaince on the web. I felt in love in building projects, as they gave me the satisfaction and empowerment to continue to strive on delivering
@@ -71,11 +73,13 @@
         <p class="about-info"> 
             And that is me, a curious and ambitious CS student with a profound interest in technology. Mastering the art of willpower and self-discipline allows me to get things done in an efficient manner. Check out my <a href="">resume</a> here!
         </p>
+        <br>
+        <hr>
 
     </div>
 
 <!-- Projects section -->
-    <div class="projects">
+    <div class="projects" id="projects">
         <h2 class="projects-title">My Projects</h2>
 
         <!-- bootstrap carousel for my projects section -->
@@ -86,14 +90,21 @@
                   <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                 </ol>
                 <div class="carousel-inner carousel-box">
-                  <div class="carousel-item active" style="background-color:rgb(255, 113, 113)">
-                    <img class="d-block w-100" src="..." alt="First slide">
+                  <div class="carousel-item active" style="background-color:#a6bac7">
+                    <!-- <img class="d-block w-100" src="..." alt="First slide"> -->
+                    <h2 class="carousel-text">“Any fool can write code that a computer can understand. Good programmers write code that humans can understand.”
+                        <br><br>
+                        <b><em> ― Martin Fowler</b></em></h2>
                   </div>
-                  <div class="carousel-item" style="background-color:rgb(255, 122, 122)">
-                    <img class="d-block w-100" src="..." alt="Second slide">
+                  <div class="carousel-item" style="background-color:#c9d6df">
+                    <h2 class="carousel-text">“When you don't create things, you become defined by your tastes rather than ability. Your tastes only narrow & exclude people. so create.”
+                            <br><br>   
+                        ― <b><em>Why The Lucky Stiff</em></b></h2>
                   </div>
-                  <div class="carousel-item" style="background-color:rgb(228, 33, 33)">
-                    <img class="d-block w-100" src="..." alt="Third slide">
+                  <div class="carousel-item" style="background-color:#e4e8ec">
+                    <h2 class="carousel-text">“Talk is cheap. Show me the code.”
+                            <br><br>   
+                            <b><em>― Linus Torvalds</b></em></h2>
                   </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -108,23 +119,23 @@
     
     </div>
 
-<!-- Blog snippets section (still deciding want or not)-->
-    <div class="blog-snippets">
+<!-- My Skills-->
+    <div class="skillset">
 
     </div>
 
 <!-- Footer section -->
-    <div class="footer">
-        <h2>CONTACT ME</h2> 
+    <div class="footer" id="contact">
+        <h2 class="contactme">CONTACT ME</h2> 
         <p>If you want to be in touch with me, find me via email or throught the social medias below!</p>
-            <p>Email: <a href="mailto:2000.lljie@gmail.com">2000.lljie@gmail.com</a></p>
+            <p >Email: <a class="email-address" href="mailto:2000.lljie@gmail.com">2000.lljie@gmail.com</a></p>
             <a href="https://www.facebook.com/lijie.leow"><i class="fab fa-facebook footer-icons"></i></a>
             <a href="https://www.linkedin.com"><i class="fab fa-linkedin footer-icons"></i></a>
             <a href="https://www.instagram.com/lijie0.0/"><i class="fab fa-instagram footer-icons"></i></a>
             <a href="https://github.com/llj22800"><i class="fab fa-github footer-icons"></i></a>
         
         <p>Else, just leave me a message here and I will reply ASAP!</p>
-            <form>
+            <form class="message-form">
                 <label for="name">Your Name:</label>
                 <input type="text" id="name" name="fullname" placeholder="Your name here..">
 
